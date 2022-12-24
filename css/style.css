@@ -1,35 +1,72 @@
-* {
-    background-color: #0c4277;
+* {margin: 0%;
+    padding: 0%;
+
+}
+   /* Body */
+#Cuerpo {
+    background-image: url(../assets/images/lionel-messi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav main main"
+    "nav main main"
+    "footer footer footer";
+    grid-template-rows: 100px 100px 100px ;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px ;
+    grid-row-gap: 10px;
     
+
 }
 
+/* Header */
+header nav {
+    background: rgb(249,212,0);
+background: radial-gradient(circle, rgba(249,212,0,1) 0%, rgba(250,250,250,1) 51%, rgba(0,212,255,1) 100%);
+}
+header a {
+    background-color: rgb(black)
+}
+header {
+    grid-area: "header";
+}
+    
 
 
-.img #Lionel{
+/* Main */
+main {
+    grid-area: "main";
+}
+
+#Lionel{
     display: flex;
     align-content: center;
 }
     
     
-#CajaUno {
+/* #CajaUno {
     margin-left: 30.5rem;
     width: 25rem;
     height: 3rem;
     background-color: #6387b0;
     border: 5px solid black;
     
-}
+} */
 
 
-#lista1 li{
+/* #lista1 li{
     color: blanchedalmond;
     display: inline;
     padding-left: 3px;
     padding-right: 3px;
     font-size: large;
-}
+} */
 ul li {
-    color: blanchedalmond;
+    color: black;
 }
 img {
     text-align: center;
@@ -65,4 +102,16 @@ a:link,a:visited,a:active {
 .TextoNegrita {
     font-weight: bolder;
 }
+
+/* Footer */
+
+footer {
+    grid-area: "footer";
+    background-color: black;
+    height: 5rem;
+}
+
+background: rgb(249,212,0);
+background: radial-gradient(circle, rgba(249,212,0,1) 0%, rgba(250,250,250,1) 51%, rgba(0,212,255,1) 100%);
+   
 
