@@ -4,36 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>DEJÁ TU OPINIÓN</title>
 </head>
-<body>
-    <header>
-        <h1 style="color: green">Contacto</h1>
-        <fieldset>
-        <ul id="lista1">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../pages/Noticias.html">Noticias</a></li>
-            <LI><a href="../pages/Goles.html">Goles</a></LI>
-            <li><a href="../pages/Contacto.html">Contacto</a></li>
-            <LI><a href="../pages/Galería.html">Galería</a></LI>
-        </ul>
-    </fieldset>
-    </header>
-    
-    <img src="../assets/images/FiI7ULMWAAYJadV.jpeg" alt="Lionel" width="560" height="315">
-    
-    <form action="" method="POST" enctype="text/plain">
-        <fieldset>
-            <legend>Dejanos tu opinión!</legend>
-            
-            <div>
-                <label for="Nombre">Nombre completo</label>
-                <input type="text" id="Nombre" placeholder="Nombre y apellido" required="">
+<body class="Galeria">
+    <header> 
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand TipografiaNav" style="color: black;" href="../index.html">MESSISMO</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: black;" aria-current="page" href="Noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: black;" aria-current="page" href="../pages/Goles.html">Goles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: black;" aria-current="page" href="../pages/Galería.html">
+                      Galería
+                    </a>
+                    
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: black;" aria-current="page" href="../pages/Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
-            <div>
-                <label for="E-mail">E-mail</label>
-                <input type="text" name="E-mail" placeholder="Correo" required="">
+          </nav>
+        
+            
+    </header>
+    <div class="CentrarH">
+        <img src="../assets/images/FiI7ULMWAAYJadV.jpeg" alt="Lionel" width="400" height="300">
+
+        <div class="CentrarColumna">
+            
+            
+            
+            <form class="Form" action="" method="POST" enctype="text/plain">
+                <fieldset>
+                    <legend>Dejanos tu opinión!</legend>
+                    
+                    <div>
+                        <label for="Nombre">Nombre completo</label>
+                        <input type="text" id="Nombre" placeholder="Nombre y apellido" required="">
+                    </div>
+                    <div>
+                        <label for="E-mail">E-mail</label>
+                        <input type="text" name="E-mail" placeholder="Correo" required="">
             </div>
             <div>
                 Te gustó la página?
@@ -54,30 +83,32 @@
                     <input type="checkbox" id="ejemplo">
                 </div>
                 
-            <div>
-                De dónde sos?
-                <select name="" id="">
-                  <option value="De acá">De acá</option>
-                  <option value="De allá">De allá</option>  
-                </select>
-            </div>
-            <div>
                 <div>
-                    Dejanos tu comentario!    
+                    De dónde sos?
+                    <select name="" id="">
+                        <option value="De acá">De acá</option>
+                        <option value="De allá">De allá</option>  
+                    </select>
                 </div>
-                <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" style="width: 330px; height: 206px;">                    </textarea>
+                <div>
+                    <div>
+                        Dejanos tu comentario!    
+                    </div>
+                    <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" style="width: 330px; height: 206px;">                    </textarea>
+                </div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar todo">
+                
+                
             </div>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar todo">
-
-            
-        </div>
-    </fieldset>
+        </fieldset>
     </form>
-    <footer style="color: grey;">
-        Copyright Messismo, Argentina
-        Desde Córdoba 
-    </footer>
+</div>
+<img src="../assets/images/FiI7ULMWAAYJadV.jpeg" alt="Lionel" width="400" height="300">
+</div>
+<footer style="color: grey;" class="Abajo">
+    Copyright Messismo, Argentina
+    Desde Córdoba 
+</footer>
 </body>
 </html>
-    

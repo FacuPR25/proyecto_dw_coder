@@ -1,15 +1,154 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500;900&display=swap');
+
+   /* Clases */
+
+   .Goles {
+    background-image: url(../assets/images/FONDO\ MESSI.webp);
+    background-size: cover;
+    
+   }
+
+.Galeria {
+    background-color: #20678a;
+}  
+
+.ImgGaleria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90vh;
+    gap: 10px;
+}
+
+.img1 {
+    object-fit: cover;
+    height: 30%;
+    width: calc(70%-10px);
     
 }
 
-   /* Clases */
+.img2 {
+    object-fit: cover;
+    height: 30%;
+    width: 30%;
+}
+.img3 {
+    object-fit: cover;
+    height: 30%; 
+    width: calc(50%-10px);
+}
+.img4 {
+    object-fit: cover;
+    height: 30%;
+    width: 50%;
+}
+.img5 {
+    object-fit: cover;
+    height: 30%;
+    width: calc(60%-10px);
+}
+.img6 {
+    object-fit: cover;
+    height: 30%;
+    width: 40%;
+}
+.Noticia {
+    background-color: bisque;
+    width: 200px;
+    height: 300px;
+    border: solid 3px black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CentrarNoticia {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 70vh;
+}
+
 .Fondo {
     background-image: url(../assets/images/lionel-messi.jpg);
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover; 
 }
+
 .TextoNegrita {
     font-weight: bolder;
+}
+
+.TipografiaNav {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 900;
+}
+
+#AFA {
+    width: 300px;
+    height: 490px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    
+}
+
+.Form {
+    background-color: #789bb2;
+    padding: 5px;
+    border-radius: 8px;
+    border: solid 2px #cfa7b5;
+    
+}
+
+.Centrar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    margin-top: 15%;
+    padding: 10px;
+}
+
+.CentrarColumna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    flex-direction: column;
+}
+
+.CentrarH {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    padding: 10px;
+}
+
+.Izquierda {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    height: auto;
+}
+
+.Abajo {
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+}
+
+.Titulo {
+    font-family: 'Heebo', sans-serif;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 2px white;
 }
 
 /* Header */
@@ -18,8 +157,12 @@ header {
 }
 header nav {
     background: rgb(249,212,0);
-background: radial-gradient(circle, rgba(249,212,0,1) 0%, rgba(250,250,250,1) 51%, rgba(0,212,255,1) 100%);
+background: radial-gradient(circle, 
+rgba(249,212,0,1) 0%, 
+rgba(250,250,250,1) 51%, 
+rgba(0,212,255,1) 100%);
 }
+
 header a {
     background-color: rgb(black)
 }
@@ -28,16 +171,13 @@ header a {
 
 
 /* Main */
+
 #Inicio aside p {
     justify-content: left;
     
 }
 
 
-
-#AFA {
-    align-content: center;
-}
 
 /* Nav */
 nav {
