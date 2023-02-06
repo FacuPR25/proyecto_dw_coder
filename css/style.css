@@ -1,66 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500;900&display=swap');
 
-   /* Clases */
+/* Clases */
 
-   .Goles {
+.Goles {
     background-image: url(../assets/images/FONDO\ MESSI.webp);
     background-size: cover;
-    
-   }
+}
 
 .Galeria {
     background-color: #20678a;
-}  
+}
 
 .ImgGaleria {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 90vh;
-    gap: 10px;
+    height: 82vh;
+    padding: 10px;
 }
 
-.img1 {
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
     object-fit: cover;
-    height: 30%;
-    width: calc(70%-10px);
-    
+    height: 33.33%;
+    width: 30%;
+    margin: 0;
 }
 
 .img2 {
-    object-fit: cover;
-    height: 30%;
-    width: 30%;
+    width: 70%;
 }
+
 .img3 {
-    object-fit: cover;
-    height: 30%; 
-    width: calc(50%-10px);
+    width: 55%;
 }
+
 .img4 {
-    object-fit: cover;
-    height: 30%;
-    width: 50%;
+    width: 45%;
 }
+
 .img5 {
-    object-fit: cover;
-    height: 30%;
-    width: calc(60%-10px);
+    width: 60%;
 }
+
 .img6 {
-    object-fit: cover;
-    height: 30%;
     width: 40%;
 }
+
 .Noticia {
-    background-color: bisque;
-    width: 200px;
-    height: 300px;
-    border: solid 3px black;
-    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: #43b0f8;
+    border: solid 2px black;
+    border-radius: 3px;
+
+    width: 200px;
+    height: 300px;
+
+    transition: all 0.2s;
+}
+
+.Noticia:hover {
+    transform: scale(1.05);
 }
 
 .CentrarNoticia {
@@ -74,7 +82,7 @@
 .Fondo {
     background-image: url(../assets/images/lionel-messi.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
 .TextoNegrita {
@@ -87,11 +95,11 @@
 }
 
 #AFA {
-    width: 300px;
-    height: 490px;
+    width: 200px;
+    height: 265px;
     object-fit: cover;
-    margin-bottom: 20px;
-    
+    /* margin-bottom: 20px; */
+
 }
 
 .Form {
@@ -99,7 +107,7 @@
     padding: 5px;
     border-radius: 8px;
     border: solid 2px #cfa7b5;
-    
+
 }
 
 .Centrar {
@@ -107,8 +115,8 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 5rem;
-    margin-top: 15%;
+    height: 54vh;
+    flex-wrap: wrap;
     padding: 10px;
 }
 
@@ -138,12 +146,6 @@
     height: auto;
 }
 
-.Abajo {
-    position: absolute;
-    bottom: 0px;
-    width: 100vw;
-}
-
 .Titulo {
     font-family: 'Heebo', sans-serif;
     width: 100%;
@@ -151,45 +153,132 @@
     text-shadow: 1px 1px 2px white;
 }
 
+.Texto {
+    width: 100%;
+    text-align: center;
+}
+
 /* Header */
+
+
 header {
     grid-area: "header";
 }
+
 header nav {
-    background: rgb(249,212,0);
-background: radial-gradient(circle, 
-rgba(249,212,0,1) 0%, 
-rgba(250,250,250,1) 51%, 
-rgba(0,212,255,1) 100%);
+    background: rgb(249, 212, 0);
+    background: radial-gradient(circle,
+            rgba(249, 212, 0, 1) 0%,
+            rgba(250, 250, 250, 1) 51%,
+            rgba(0, 212, 255, 1) 100%);
+    margin-bottom: 1px;
 }
 
 header a {
     background-color: rgb(black)
 }
 
-    
+
 
 
 /* Main */
 
+main {
+    width: 100%;
+    margin-top: 25px;
+    min-height: 82vh;
+}
+
 #Inicio aside p {
     justify-content: left;
-    
+
 }
 
 
 
 /* Nav */
 nav {
-    background: rgb(249,212,0);
-background: radial-gradient(circle, rgba(249,212,0,1) 0%, rgba(250,250,250,1) 51%, rgba(0,212,255,1) 100%);
+    background: rgb(249, 212, 0);
+    background: radial-gradient(circle, rgba(249, 212, 0, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(0, 212, 255, 1) 100%);
 }
+
 /* Footer */
 
 footer {
     background-color: black;
-    height: 5rem;
+    color: grey;
+    height: 9vh;
+    width: 100vw;
 }
 
-   
+header {
+    height: 5vh;
+}
 
+.mainGoles {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.golesCarta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #43b0f8;
+    width: 350px;
+    height: 350px;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+.golesCarta:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 15px black;
+}
+
+
+.golesCarta h2 {
+    color: #f2f2f2;
+    transition: all 0.2s;
+}
+
+.golesCarta:hover h2 {
+    color: #ffffff;
+}
+
+.golesCarta iframe {
+    width: 80%;
+    height: 60%;
+}
+
+
+@media (max-width: 735px) {
+    .Centrar {
+        justify-content: center;
+        /* align-items: center; */
+        width: 100%;
+        height: 150vh;
+    }
+
+    #AFA {
+        width: 80%;
+        height: auto;
+    }
+
+    main {
+        width: 100%;
+        height: 200vh;
+        margin-top: 29px;
+    }
+}
+
+@media (max-width: 1049px) {
+    .mainGoles {
+        /* height: 150vh; */
+        background-color: rebeccapurple;
+    }
+}
