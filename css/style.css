@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@500;900&display=swap");
 
+.carousel-item {
+  text-shadow: #c3c0bf;
+}
+
 .Goles {
   background-image: url(../assets/images/FONDO\ MESSI.webp);
   background-size: cover;
