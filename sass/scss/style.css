@@ -1,0 +1,251 @@
+nav {
+  background: rgb(249, 212, 0);
+  background: radial-gradient(circle, rgb(249, 212, 0) 0%, rgb(250, 250, 250) 51%, rgb(0, 212, 255) 100%);
+}
+nav .TipografiaNav {
+  font-family: "Heebo", sans-serif;
+  font-weight: 900;
+}
+
+.Fondo {
+  background-image: url(../../assets/images/lionel-messi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Fondo .maininicio {
+  width: 100%;
+  min-height: 84.1vh;
+}
+.Fondo .maininicio #Inicio {
+  text-align: center;
+  padding: 5px 10px;
+}
+.Fondo .maininicio #Inicio .Titulo {
+  font-family: "Heebo", sans-serif;
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px 2px white;
+}
+.Fondo .maininicio #Inicio .Texto {
+  width: 100%;
+  font-family: "Heebo", sans-serif;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 1px rgb(75, 74, 74);
+  font-weight: bold;
+}
+.Fondo .maininicio #Inicio .Centrar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 54vh;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.Fondo .maininicio #Inicio .Centrar #AFA {
+  width: 200px;
+  height: 265px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.2s;
+}
+.Fondo .maininicio #Inicio .Centrar #AFA:hover {
+  transform: scale(1.7);
+}
+.Fondo .maininicio #Inicio .Centrar #videomundial {
+  width: 350px;
+  height: 260px;
+}
+@media (max-width: 590px) {
+  .Fondo .maininicio {
+    width: 100%;
+    height: 185vh;
+    margin-top: 29px;
+  }
+  .Fondo .maininicio .Centrar {
+    justify-content: center;
+    width: 100%;
+    min-height: 150vh;
+  }
+  .Fondo .maininicio .Centrar #AFA {
+    width: 80%;
+    height: auto;
+  }
+  .Fondo .maininicio .Centrar #videomundial {
+    width: 80%;
+    height: 50vh;
+  }
+}
+.Fondo .CentrarNoticia {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 84.1vh;
+  flex-wrap: wrap;
+}
+.Fondo .CentrarNoticia .card-color {
+  background-color: #c3c0bf;
+  margin: 5px;
+}
+.Fondo .CentrarNoticia .scale {
+  transition: all 0.2s;
+}
+.Fondo .CentrarNoticia .scale:hover {
+  transform: scale(1.05);
+}
+
+.Goles {
+  background-image: url(../../assets/images/FONDO\ MESSI.webp);
+  background-size: cover;
+}
+.Goles .mainGoles {
+  min-height: 84.1vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10%;
+}
+.Goles .mainGoles .carousel-item {
+  text-shadow: #c3c0bf;
+}
+.Goles .mainGoles .iframegoles {
+  width: 50vw;
+  height: 70vh;
+}
+@media (max-width: 735px) {
+  .Goles .mainGoles {
+    padding: 0;
+    justify-content: center;
+  }
+  .Goles .mainGoles .iframegoles {
+    width: 90vw;
+  }
+}
+
+.Galeria {
+  background-color: #20678a;
+}
+.Galeria .maingaleria {
+  width: 100%;
+  min-height: 84.1vh;
+}
+.Galeria .maingaleria .ImgGaleria {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 82vh;
+  padding: 10px;
+  justify-content: center;
+}
+.Galeria .maingaleria .ImgGaleria .img1,
+.Galeria .maingaleria .ImgGaleria .img2,
+.Galeria .maingaleria .ImgGaleria .img3,
+.Galeria .maingaleria .ImgGaleria .img4,
+.Galeria .maingaleria .ImgGaleria .img5,
+.Galeria .maingaleria .ImgGaleria .img6,
+.Galeria .maingaleria .ImgGaleria .img7 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 30.83%;
+  width: 27.5%;
+  margin: 5px;
+}
+.Galeria .maingaleria .ImgGaleria .img2 {
+  -o-object-position: 95% 5%;
+     object-position: 95% 5%;
+  width: 67.5%;
+}
+.Galeria .maingaleria .ImgGaleria .img3 {
+  -o-object-position: bottom;
+     object-position: bottom;
+  width: 52.5%;
+}
+.Galeria .maingaleria .ImgGaleria .img4 {
+  width: 42.5%;
+}
+.Galeria .maingaleria .ImgGaleria .img5 {
+  -o-object-position: center;
+     object-position: center;
+  width: 57.5%;
+}
+.Galeria .maingaleria .ImgGaleria .img6 {
+  width: 37.5%;
+}
+.Galeria .maingaleria .ImgGaleria .scale {
+  transition: all 0.2s;
+}
+.Galeria .maingaleria .ImgGaleria .scale:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 420px) {
+  .Galeria .maingaleria .ImgGaleria {
+    height: 180vh;
+  }
+  .Galeria .maingaleria .ImgGaleria .img1,
+  .Galeria .maingaleria .ImgGaleria .img2,
+  .Galeria .maingaleria .ImgGaleria .img3,
+  .Galeria .maingaleria .ImgGaleria .img4,
+  .Galeria .maingaleria .ImgGaleria .img5,
+  .Galeria .maingaleria .ImgGaleria .img6,
+  .Galeria .maingaleria .ImgGaleria .img7 {
+    height: 150px;
+    width: 90%;
+  }
+}
+
+.Contacto {
+  background-image: url(../../assets/images/messiylacopa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Contacto .mainContacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 84.1vh;
+  padding: 10px;
+}
+.Contacto .mainContacto img {
+  width: 400px;
+  height: 300px;
+}
+.Contacto .mainContacto .Form {
+  background-color: #c3c0bf;
+  padding: 5px;
+  border-radius: 8px;
+  border: solid 2px black;
+}
+.Contacto .mainContacto .Form textarea {
+  width: 95%;
+  height: 80px;
+}
+@media (max-width: 350px) {
+  .Contacto .mainContacto .Form {
+    width: 98%;
+  }
+}
+@media (max-width: 1100px) {
+  .Contacto .mainContacto {
+    justify-content: center;
+  }
+  .Contacto .mainContacto img {
+    display: none;
+  }
+}
+
+footer {
+  background-color: black;
+  color: grey;
+  height: 8.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 30px;
+}
+footer a {
+  color: #c3c0bf;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
